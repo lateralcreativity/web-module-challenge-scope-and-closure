@@ -42,6 +42,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closure allows you to access data in a parent function so you can use it in a nested function.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,8 +65,14 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+The function being returned is using closure since its nested in the parent.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+the console logged string will remain the same but the value for name can be changed by editing the dansroll variable
+and the newroll value will always change because its assigned to random()
+
 c. What is the lexical scope of `newRoll`? 
+newRoll is in the scope of the anonymous function meaning if you tried to access newRoll above the return line you would not be able to
 
 ### Task 3 - Stretch Goals
 
